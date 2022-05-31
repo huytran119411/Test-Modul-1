@@ -11,16 +11,16 @@
         function isFibonacci(number){
         let num1=0;
         let num2=1;
-        let count=false;
+        let check=false;
         for(let i=0; i<=number;i++) {
         let num3=num1+num2;
         if(number===num1|| number===num2 || number===num3) {
-        count=true;
+        check=true;
     }
         num1=num2;
         num2=num3;
     }
-        return count;
+        return check;
 
     }
         let num = +prompt("nhap so can kiem tra :")
