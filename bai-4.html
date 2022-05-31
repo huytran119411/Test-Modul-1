@@ -22,12 +22,12 @@
         }
     }
 
-    let hinhTron = new Circle(10, 10, 100, "#000000")
+    let circle = new Circle(10, 10, 100, "#000000")
     let canvas = document.getElementById("canvas").getContext("2d")
 
-    canvas.fillStyle = hinhTron.color
+    canvas.fillStyle = circle.color
     canvas.beginPath()
-    canvas.arc(hinhTron.x, hinhTron.y, hinhTron.radius, 0, 2 * Math.PI)
+    canvas.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI)
     canvas.fill()
 
 </script>
