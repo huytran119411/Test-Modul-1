@@ -20,15 +20,18 @@
             this.radius = radius;
             this.color = color;
         }
+
+        render(canvas) {
+            canvas.beginPath();
+            canvas.fillStyle = this.color;
+            canvas.arc(this.x, this.y, this.radius, 0, Math.PI*2);
+            canvas.fill();
+        }
     }
 
     let circle = new Circle(10, 10, 100, "#000000")
     let canvas = document.getElementById("canvas").getContext("2d")
-
-    canvas.fillStyle = circle.color
-    canvas.beginPath()
-    canvas.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI)
-    canvas.fill()
+    circle.render(canvas)
 
 </script>
 </html>
